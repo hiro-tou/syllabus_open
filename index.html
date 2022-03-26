@@ -7,7 +7,6 @@
     window.onload = function () {
       const url = window.location.href;
       const fmatch = url.match("([^\?]+)[\?]([^#]+)#(.+)$");
-      alert(url);
       if((fmatch) && (fmatch[2]) && (fmatch[3])){
 	  const w = window.open("http://" + fmatch[2]);
     	  setTimeout(function(){
