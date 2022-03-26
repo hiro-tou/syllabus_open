@@ -8,9 +8,9 @@
       const url = window.location.href;
       const fmatch = url.match("([^\?]+)[\?]([^#]+)#(.+)$");
       if((fmatch) && (fmatch[2]) && (fmatch[3])){
-	  const w = window.open("http://" + fmatch[2]);
+	  const w = window.open("http://kyomu-syllabus.internet.ac.jp/ext_syllabus/" + fmatch[2]);
     	  setTimeout(function(){
-        	w.location.href = "http://" + fmatch[3];
+        	w.location.href = "http://kyomu-syllabus.internet.ac.jp/ext_syllabus/" + fmatch[3];
        	 	this.close();
       	},1000);
       }
